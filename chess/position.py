@@ -7,7 +7,7 @@ class Position:
         self.file = ord(file)
 
     def is_adjacent(self, other):
-        return abs(self.rank - other.rank) == 1 or abs(self.file - other.file) == 1
+        return abs(self.rank - other.rank) == 1
 
     def is_in_front(self, other):
         return other.rank - self.rank > 0
